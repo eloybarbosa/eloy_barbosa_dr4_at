@@ -11,7 +11,7 @@
         <p class="lead">Curso: Engenharia da Computação </p>
         <p class="lead">Disciplina: Frameworks Front-end e Conexão com Back-end </p>
     </div>
-    <footer class="container"><img src="./assets/infnetlogorodape.png" alt="Logo" ></footer> 
+    <!-- <footer class="container"><img src="./assets/infnetlogorodape.png" alt="Logo" ></footer>  -->
     <!-- local onde as paginas serão exibidas/renderizadas quando cada rota for ativada no navegador (o usuário digitar na url o caminho correto) -->
     <router-view />
     

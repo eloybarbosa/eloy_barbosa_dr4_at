@@ -4,6 +4,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Main from './components/Main';
+import AddComentario from './components/AddComentario';
+import Comentarios from './components/Comentarios';
 
 Vue.use(VueRouter);
 
@@ -19,6 +21,16 @@ export default new VueRouter({
             path:'/',
             name:'main',
             component: Main
+        },
+        {
+            path:'/addcomentario',
+            name:'addcomentario',
+            component: AddComentario
+        },
+        {
+            path:'/comentarios',
+            name:'comentarios',
+            component: Comentarios
         },
     ]
 

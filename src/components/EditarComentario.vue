@@ -1,7 +1,7 @@
 <template>
-   <div class="container">
-        <h3>Deixe seu comentário</h3>
-        
+    <div class="container">
+        <br>
+        <h5> Editando o Comentário </h5>
         <form @submit.prevent="onSubmit">
             <div class="form-group">
             <label for="name">Nome:</label>
@@ -11,36 +11,38 @@
             <label for="body">Comentário:</label>
             <textarea class="form-control" rows="3" type="textarea" id="body" v-model="add_comentario.body" placeholder="Deixe seu comentário..." required></textarea>
             <br>
-            <input type="submit" value="Submit" class="btn btn-dark"> <router-link to="/Comentarios" class="btn btn-dark">Comentários</router-link> <router-link to="/" class="btn btn-dark">Home</router-link>
+            <input type="submit" value="Submit" class="btn btn-dark"> 
             </div>
         </form>
         </div>
-
+    
 </template>
 
 <script>
-//importando os Actions de comentario.js
-import { mapActions } from "vuex";
-
+import { mapGetters, mapActions } from "vuex";
 export default {
-    name: "AddComentario",
+    name: "EditarComentario",
     data() {
         return {
+            id:this.$route.params.id,
             add_comentario : {
                 name: "",
-                email: "", 
+                email: "",
                 body: ""
             }
-        };
+        }
     },
-
+    computed: mapGetters(["comentarioById"]),
+    created() {
+        this.add_comentario = this.comentarioById(this.id)
+    },
     methods: {
-        ...mapActions(["addComentario"]),
+        ...mapActions(["updateComentario"]),
         onSubmit() {
-            console.log("testando submit")
-            this.addComentario(this.add_comentario);
-            alert("Comentário Adicionado com sucesso")
+            this.updateComentario(this.add_comentario);
+            alert("Dados alterados com sucesso")
         }
     }
-};    
+    
+}
 </script>

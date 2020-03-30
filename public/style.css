@@ -19,3 +19,15 @@
 .textocentro {
     text-align: center;
 }
+#dia {
+    font-weight: unset;
+    color: cornflowerblue;
+}
+#tarde {
+    color: darkgoldenrod;
+    font-weight: unset;
+}
+#noite {
+    font-weight: unset;
+    color: navy;
+}

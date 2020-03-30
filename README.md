@@ -1,6 +1,6 @@
 # eloy_barbosa_dr4_at
 
-![Eloy Barbosa Logo](/src/assets/logo.pngstyle=centerme) 
+![Infnet Logo](/src/assets/infnetlogo.png?style=centerme) ![Eloy Barbosa Logo](/src/assets/logo.png?style=centerme) 
 
  Repositório criado para receber o assessment de Front-end e Conexão com Back-end em VueJs
 
@@ -19,8 +19,8 @@ npm install vuex --save
 ```
 npm install axios --save
 ```
-### Compiles and hot-reloads for development
+
+## Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-![Infnet Logo](/src/assets/infnetlogo.pngstyle=centerme)

@@ -7,7 +7,7 @@
 <h2 class="display-4 textocentro">Mural do Eloy</h2>
 
 
-<router-link to="/AddComentario" class="btn btn-dark btn-lg btn-block">Adicionar um comentário</router-link>
+<router-link to="/AddComentario" class="btn btn-dark btn-lg btn-block" disabled>Adicionar um comentário</router-link>
 <router-link to="/Comentarios" class="btn btn-dark btn-lg btn-block">Visualizar Mural</router-link>
 
 </div>

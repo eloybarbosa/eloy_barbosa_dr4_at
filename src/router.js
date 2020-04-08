@@ -8,6 +8,7 @@ import AddComentario from './components/AddComentario';
 import Comentarios from './components/Comentarios';
 import DetalheComentario from './components/DetalheComentario';
 import EditarComentario from './components/EditarComentario';
+import Notfound from './components/Notfound';
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ export default new VueRouter({
     // path -> O caminho do browser que será utilizado pela rota e com isso será renderizado o componente que informarmos no campo "component".
     // name -> Um nome apenas para referência.
     // component -> Um componente que será renderizado na tela, repare que no Vue, uma tela também é um componente.
+        {
+            path:'*',
+            name:'naoencontrada',
+            component: Notfound
+        },
         {
             path:'/',
             name:'main',
